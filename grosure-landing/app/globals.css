@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-primary font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3 text-base font-medium text-white transition-all duration-300 hover:bg-primary/90 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-xl border border-border bg-surface px-6 py-3 text-base font-medium text-primary transition-all duration-300 hover:border-accent hover:bg-accent/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3 text-base font-medium text-white transition-all duration-300 hover:bg-accent/90 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  }
+
+  .section-container {
+    @apply relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 py-16 md:py-24;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-light tracking-tight text-primary;
+  }
+
+  .section-subtitle {
+    @apply text-base md:text-lg text-secondary mt-4 max-w-2xl;
+  }
+
+  .card {
+    @apply bg-white border border-border rounded-xl p-6 transition-all duration-300 hover:border-accent hover:shadow-md;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
