@@ -37,7 +37,7 @@ export default function Home() {
                       loop
                       muted
                       playsInline
-                      className="hidden sm:block w-full h-full object-cover"
+                      className="w-full h-full object-cover"
                       ref={(video) => {
                         if (video) {
                           video.playbackRate = 2.0;
@@ -46,14 +46,6 @@ export default function Home() {
                     >
                       Your browser does not support the video tag.
                     </video>
-                    <Image
-                      src="/images/app-home.png"
-                      alt="Olive mobile app home screen"
-                      fill
-                      priority
-                      sizes="(max-width: 640px) 100vw"
-                      className="object-cover sm:hidden"
-                    />
                   </div>
                 </div>
               </div>
